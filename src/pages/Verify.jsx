@@ -1,12 +1,11 @@
 import React from 'react'
 
-const Contact = () => {
-  return (
+const Verify = () => {
+  return ( 
     <div>
       
     </div>
   )
 }
 
-export default Contact
- 
+export default Verify
