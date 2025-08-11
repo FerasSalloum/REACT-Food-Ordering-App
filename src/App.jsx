@@ -10,7 +10,7 @@ import PlaceOrder from "./pages/PlaceOrder";
 import Verify from "./pages/Verify";
 function App() {
   return (
-    <div>
+    <div className="overflow-hidden bg-light text-[#404040]">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
