@@ -6,7 +6,7 @@ import { TbUserCircle, TbArrowRight } from "react-icons/tb";
 import { CgMenuLeft } from "react-icons/cg";
 import { useState } from "react";
 const Header = () => {
-  const [menOpend, setMenOpend] = useState(true);
+  const [menOpend, setMenOpend] = useState(false);
   const toggleMenu = () => {
     setMenOpend((prev) => !prev);
   };
@@ -15,7 +15,7 @@ const Header = () => {
       <div className="max-padd-container flexBetween">
         <Link to="/" className="bold-24 flex-1 flex">
           <span className="inline-flex">
-            <span className="inline-flex items-center justify-center p-2 h-8 2-8 bg-secondary text-white rotate-[-31deg] rounded-full">
+            <span className="inline-flex items-center justify-center p-2 h-8 w-8 bg-secondary text-white rotate-[-31deg] rounded-full">
               F
             </span>
             ood
