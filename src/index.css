@@ -35,7 +35,7 @@
 
 /* Override Swiper pagination active bullet color */
 .swiper-pagination-bullet-active {
-  background: #ff5733 !important; 
+  background: #ff5733 !important;
 }
 
 @layer base {
@@ -66,27 +66,27 @@
 
 @layer utilities {
   .active-link {
-    @apply text-secondary relative after:w-1.5 after:h-1.5 after:rounded-full after:bg-secondary after:absolute after:-bottom-2.5 after:left-[7px] ;
+    @apply text-secondary relative after:w-1.5 after:h-1.5 after:rounded-full after:bg-secondary after:absolute after:-bottom-2.5 after:left-[7px];
   }
 
-  .btn-white  { 
-    @apply  medium-14 bg-white text-tertiary px-7 py-3.5 rounded-full
+  .btn-white {
+    @apply medium-14 bg-white text-tertiary px-7 py-3.5 rounded-full;
   }
 
-  .btn-dark  { 
-    @apply  medium-14 bg-tertiary text-white px-7 py-3.5 rounded-full
-  }
-  
-  .btn-light  { 
-    @apply  medium-14 bg-primary ring-1 ring-slate-900/10 px-7 py-3.5 rounded-full hover:bg-white transition-all duration-300
+  .btn-dark {
+    @apply medium-14 bg-tertiary text-white px-7 py-3.5 rounded-full;
   }
 
-  .btn-outline  { 
-    @apply  medium-14 bg-white ring-1 ring-slate-900/10 px-7 py-3.5 rounded-full hover:bg-primary transition-all duration-300
+  .btn-light {
+    @apply medium-14 bg-primary ring-1 ring-slate-900/10 px-7 py-3.5 rounded-full hover:bg-white transition-all duration-300;
   }
 
-  .btn-secondary  { 
-    @apply  medium-14 bg-secondary text-white px-7 py-3.5 rounded-full transition-all  
+  .btn-outline {
+    @apply medium-14 bg-white ring-1 ring-slate-900/10 px-7 py-3.5 rounded-full hover:bg-primary transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply medium-14 bg-secondary text-white px-7 py-3.5 rounded-full transition-all;
   }
 
   .max-padd-container {
@@ -281,3 +281,24 @@
     @apply text-[14px] font-[700];
   }
 }
+/* .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */

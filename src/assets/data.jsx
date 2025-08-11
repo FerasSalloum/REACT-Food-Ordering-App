@@ -312,7 +312,7 @@ export const foods = [
     category: "Rice",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: true
+    popular: false
   },
   {
     _id: "19",
@@ -384,7 +384,7 @@ export const foods = [
     category: "Rice",
     sizes: ["H", "F"],
     date: 1716634345448,
-    popular: false
+    popular: true
   },
 
   // Deserts Products
