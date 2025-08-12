@@ -4,7 +4,7 @@ import { FOOTER_LINKS, SOCIALS, FOOTER_CONTACT_INFO } from "../assets/data";
 const Footer = () => {
   return (
     <footer className="mb-4">
-      <div className="rounded-tr-3xl xl:pt-20 pb-8">
+      <div className="rounded-tr-3xl pb-8">
         <h3 className="h3">Discover flavors that awaken your taste buds.</h3>
         <p>
           Experiece a variety os dishe made with the freshest ingredients and
