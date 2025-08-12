@@ -6,7 +6,7 @@ import fresh from "../assets/fresh-food.svg";
 import hat from "../assets/hat-chef.svg";
 const Features = () => {
   return (
-    <section className="max-padd-container py-16 xl:py-28 pb-12">
+    <section className="max-padd-container  xl:py-28 py-10">
       <Title
         title1={"WHY CHOOSE"}
         title2={"US?"}

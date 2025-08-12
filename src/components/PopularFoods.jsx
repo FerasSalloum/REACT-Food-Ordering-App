@@ -15,7 +15,7 @@ const PopularFoods = () => {
     setPopularFoods(data.slice(0, 6));
   }, [foods]);
   return (
-    <section className="max-padd-container pt-16">
+    <section className="max-padd-container py-10">
       <Title
         title1={"POPULAR"}
         title2={"FOODS"}

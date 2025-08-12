@@ -8,7 +8,7 @@ import { IoPeopleOutline } from "react-icons/io5";
 import { PiChefHatFill } from "react-icons/pi";
 const Hero = () => {
   return (
-    <section className="max-padd-container py-20 xl:py-36 bg-deep">
+    <section className="max-padd-container py-20 xl:py-36 bg-deep mb-16">
       <div className="flexCenter gap-6 flex-col xl:flex-row">
         <div className="flex flex-1 flex-col pt-12 xl:pt-32">
           <h1 className="h1 max-w-[46rem">
