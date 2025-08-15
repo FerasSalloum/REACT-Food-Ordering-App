@@ -8,8 +8,8 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = ({ containerStyle, toggleMenu, menOpend }) => {
   const navItems = [
     { to: "/", label: "Home", icon: <TbHomeFilled /> },
-    { to: "/contact", label: "Contact", icon: <IoMdListBox /> },
     { to: "/menu", label: "Menu", icon: <IoMailOpen /> },
+    { to: "/contact", label: "Contact", icon: <IoMdListBox /> },
   ];
   return (
     <nav className={containerStyle}>

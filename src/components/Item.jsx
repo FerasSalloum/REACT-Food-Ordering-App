@@ -5,10 +5,10 @@ import { ShopContext } from "../Context/ShopContext";
 
 const Item = ({ food }) => {
   const [size, setSize] = useState(food.sizes[0]);
-  const { currency } = useContext(ShopContext);
+  const { currency, addItemToCart } = useContext(ShopContext);
   return (
     <div>
-      <div className="flex rounded-xl bg-deep relative">
+      <div className="flex rounded-xl bg-deep relative ">
         {/* photo */}
         <div className="flexCenter m-6 rounded-full absolute top-0 bottom-0 left-[-88px]">
           <img
@@ -20,7 +20,7 @@ const Item = ({ food }) => {
           />
         </div>
         {/* info */}
-        <div className="mx-4 pl-20">
+        <div className="mx-4 pl-20 ">
           {/* titel & decription */}
           <div className="py-3">
             <h4 className="bold-16 line-clamp-1 mb-1">{food.name}</h4>
@@ -46,6 +46,7 @@ const Item = ({ food }) => {
                 })
                 .map((item, i) => (
                   <button
+                    onClick={() => setSize(item)}
                     key={i}
                     className={`${
                       item === size ? "ring-1 ring-slate-900/10" : ""
@@ -55,7 +56,10 @@ const Item = ({ food }) => {
                   </button>
                 ))}
             </div>
-            <button className="flexCenter gap-x-1 text-[18px] bg-secondary text-white rounded-sm p-[3px]">
+            <button
+              className="flexCenter gap-x-1 text-[18px] bg-secondary text-white rounded-sm p-[3px]"
+              onClick={() => addItemToCart(food._id, size)}
+            >
               <TbShoppingBagPlus />
             </button>
           </div>

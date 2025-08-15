@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import { RiShoppingBagLine, RiUserLine } from "react-icons/ri";
 import { TbUserCircle, TbArrowRight } from "react-icons/tb";
 import { CgMenuLeft } from "react-icons/cg";
 import { useState } from "react";
+import ShopProvider from "../Context/ShopProvider";
+import { ShopContext } from "../Context/ShopContext";
 const Header = () => {
   const [menOpend, setMenOpend] = useState(false);
+  const { getCartCount } = useContext(ShopContext);
   const toggleMenu = () => {
     setMenOpend((prev) => !prev);
   };
@@ -43,7 +46,7 @@ const Header = () => {
           <Link to={"/cart"} className="flex relative">
             <RiShoppingBagLine className="text-2xl" />
             <span className="bg-secondary text-white medium-14 flexCenter w-4 h-4 rounded-full shadow-inner">
-              0
+              {getCartCount()}
             </span>
           </Link>
           <div className="group relative">
